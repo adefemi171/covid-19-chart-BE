@@ -2,6 +2,7 @@
 .gitignore
 node_modules
 /[Cc]ovid-dashboard/node_modules
+/dashboard-app
 
 
 

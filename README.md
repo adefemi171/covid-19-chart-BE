@@ -31,7 +31,7 @@ JavaScript(CubeJS and VueJS)
         ┣ 📜README.md
 
 - `I use Postgres as my Database`
-
+- The data stored in the database was gotten from [Centers for Disease Control and Prevention](https://data.cdc.gov/NCHS/Provisional-COVID-19-Death-Counts-by-Sex-Age-and-S/9bhg-hcku)
 ## How to setup project and run locally
 
 ### Clone the repository 

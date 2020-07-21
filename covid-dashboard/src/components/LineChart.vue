@@ -55,6 +55,7 @@ export default {
         dimension: "CovidTimeseries.dataAsOf",
         granularity: 'week',
         dateRange: "This month"
+        // dateRange: ["2020-02-01", "2020-02-15"]
       }
       ],
       // order: [CovidTimeseries.count: "desc"],
