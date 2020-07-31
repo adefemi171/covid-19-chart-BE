@@ -11,6 +11,14 @@ cube(`CovidTimeseries`, {
       type: `count`
       // type: `count`,
       // drillMembers: [id]
+    },
+    covidDeath:{
+      sql: `covid_death`,
+      type: `number`
+    },
+    totalDeath:{
+      sql: `total_death`,
+      type: `number`
     }
   },
   
@@ -55,9 +63,6 @@ cube(`CovidTimeseries`, {
       sql: `data_as_of`,
       type: `time`
     },
-    covidDeath:{
-      sql: `covid_death`,
-      type: `number`
-    }
+    
   }
 });
