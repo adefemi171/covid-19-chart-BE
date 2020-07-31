@@ -52,6 +52,10 @@ cube(`CovidTimeseries`, {
     dataAsOf: {
       sql: `data_as_of`,
       type: `time`
+    },
+    totalDeaths: {
+      sql: `total_deaths`,
+      type: `number`
     }
   }
 });
