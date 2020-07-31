@@ -7,18 +7,8 @@ cube(`CovidTimeseries`, {
   
   measures: {
     count: {
-      sql: `id`,
-      type: `count`
-      // type: `count`,
-      // drillMembers: [id]
-    },
-    covidDeath:{
-      sql: `covid_death`,
-      type: `number`
-    },
-    totalDeath:{
-      sql: `total_death`,
-      type: `number`
+      type: `count`,
+      drillMembers: [id]
     }
   },
   
@@ -33,11 +23,11 @@ cube(`CovidTimeseries`, {
       type: `string`
     },
     
-    // id: {
-    //   sql: `id`,
-    //   type: `number`,
-    //   primaryKey: true
-    // },
+    id: {
+      sql: `id`,
+      type: `number`,
+      primaryKey: true
+    },
     
     footNote: {
       sql: `foot_note`,
@@ -62,7 +52,6 @@ cube(`CovidTimeseries`, {
     dataAsOf: {
       sql: `data_as_of`,
       type: `time`
-    },
-    
+    }
   }
 });
