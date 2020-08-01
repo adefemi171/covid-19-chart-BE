@@ -9,10 +9,20 @@ cube(`CovidTimeseries`, {
     count: {
       type: `count`,
       drillMembers: [id]
+    },
+    totalDeath: {
+      type: `count`,
+      sql: `${CUBE}."total_deaths"`,
     }
   },
   
   dimensions: {
+    id: {
+      sql: `id`,
+      type: `number`,
+      primaryKey: true
+    },
+    
     sex: {
       sql: `${CUBE}."Sex"`,
       type: `string`
@@ -21,12 +31,6 @@ cube(`CovidTimeseries`, {
     ageGroup: {
       sql: `${CUBE}."Age_group"`,
       type: `string`
-    },
-    
-    id: {
-      sql: `id`,
-      type: `number`,
-      primaryKey: true
     },
     
     footNote: {
@@ -39,8 +43,8 @@ cube(`CovidTimeseries`, {
       type: `string`
     },
     
-    endWeek: {
-      sql: `${CUBE}."End_Week"`,
+    dataAsOf: {
+      sql: `data_as_of`,
       type: `time`
     },
     
@@ -49,13 +53,13 @@ cube(`CovidTimeseries`, {
       type: `time`
     },
     
-    dataAsOf: {
-      sql: `data_as_of`,
+    endWeek: {
+      sql: `${CUBE}."End_Week"`,
       type: `time`
     },
-    totalDeaths: {
-      sql: `total_deaths`,
-      type: `number`
-    }
+    covidDeath: {
+      sql: `${CUBE}."covid_deaths"`,
+      type: `string`
+    },
   }
 });
