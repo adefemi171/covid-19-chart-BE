@@ -47,14 +47,6 @@ Using npm
 
 ### To start the App and run locally
 
-## For the Backend folder
-
     ```
-    npm run dev
-    ```    
-
-## For the Frontend folder
-
-    ```
-    yarn serve
+    npm start
     ```    
