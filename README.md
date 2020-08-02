@@ -27,8 +27,10 @@ JavaScript(CubeJS and VueJS)
         ┣ 📜package-lock.json
         ┣ 📜README.md
 
-- `I use Postgres as my Database`
+- `I used Postgres as my Database`
 - The data stored in the database was gotten from [Centers for Disease Control and Prevention](https://data.cdc.gov/NCHS/Provisional-COVID-19-Death-Counts-by-Sex-Age-and-S/9bhg-hcku)
+- The app was deployed using Heroku and the link can be found here[covid-dashboard-BE](https://covid19-us-dashboard.herokuapp.com/)
+
 ## How to setup project and run locally
 
 ### Clone the repository 
