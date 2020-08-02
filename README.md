@@ -7,11 +7,8 @@
 
 The app will consist of:
 
-    └──Backend Folder
-    └──Frontend Folder
-        
+    └──Backend Folder      
 
-  
 
 
 # Proposed Stack
@@ -20,9 +17,9 @@ JavaScript(CubeJS and VueJS)
 # Top-level directory layout
 
     📦Covid-19-Chart
-        ┗ 📦covid-dashboard (Frontend)
-            ┗ 📦
-        📦covid-19-proj (Backend)
+        ┗ 📦schema
+            ┣ 📜CovidTimeseries.js
+            ┣ 📜Orders.js
         ┣ 📜index.js
         ┣ 📜.env.example
         ┣ 📜.gitignore
