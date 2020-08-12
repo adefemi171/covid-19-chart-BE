@@ -11,9 +11,13 @@ cube(`CovidTimeseries`, {
       drillMembers: [id]
     },
     totalDeath: {
-      type: `count`,
+      type: `sum`,
       sql: `${CUBE}."total_deaths"`,
-    }
+    },
+    covidDeath: {
+      sql: `${CUBE}."covid_deaths"`,
+      type: `sum`
+    },
   },
   
   dimensions: {
@@ -57,9 +61,9 @@ cube(`CovidTimeseries`, {
       sql: `${CUBE}."End_Week"`,
       type: `time`
     },
-    covidDeath: {
+    allCovidDeath: {
       sql: `${CUBE}."covid_deaths"`,
-      type: `string`
+      type: `number`
     },
   }
 });
